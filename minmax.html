@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dasar Part 3</title>
+    <style>
+        .container {
+            min-width: 100px;
+            min-height: 50px;
+            background-color: cyan;
+            border: 10px solid red;
+            border-radius: 70% 20% 30% 50%;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            /* opacity: 30%; */
+            overflow: hidden;
+        }
+
+        .circle img:hover {
+            width: 250px;
+            height: 250px;
+            opacity: 0.2;
+        }
+
+        .circle img:active {
+            opacity: 1;
+        }
+
+        .textbox {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p></p>
+    </div>
+    <div class="circle">
+        <img src="https://picsum.photos//200" alt=""></img>
+    </div>
+    <div class="textbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium sequi placeat accusantium officiis?
+            Dignissimos itaque laudantium tempore accusantium ab adipisci, alias modi iure doloremque corrupti nisi nam
+            veniam deserunt! Harum voluptate nam accusamus assumenda ullam perspiciatis, consequuntur ipsa vitae aliquam
+            cum dolores similique architecto sint eligendi veniam excepturi quisquam.</p>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-radius: 5%;
+            /* Membuat gambar berbentuk lingkaran */
+            transition: transform 0.3s ease;
+            /* Menambahkan efek transisi */
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+            /* Gambar akan membesar saat hover */
+        }
+
+        .image-section img:active {
+            transform: scale(0.95);
+            /* Gambar akan mengecil sedikit saat diklik */
+        }
+
+        .details-section {
+            padding: 15px;
+        }
+
+        .label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #FF5722;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .discount {
+            color: #f44336;
+            font-size: 14px;
+        }
+
+        .additional-discount {
+            background-color: rgba(255, 0, 0, 0.1);
+            color: #f44336;
+            font-size: 14px;
+            margin-top: 10px;
+            /* Increased margin for better separation */
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .location,
+        .ratings {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .ratings span {
+            color: #080806;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image-section">
+            <img src="boneka.jpg" alt="boneka.jpg">
+        </div>
+        <div class="details-section">
+            <span class="label">Beli</span>
+            <h2>Boneka custom bear</h2>
+            <p class="price">Rp31.700 <span class="original-price">Rp50.000</span>
+            </p>
+            <p class="additional-discount">Pilih 2, diskon Rp200</p>
+            <div class="location">
+                <p>Kota Bekasi</p>
+            </div>
+            <div class="ratings">
+                <span>⭐ 5.0 | 10RB+ terjual</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
